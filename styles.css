@@ -1,0 +1,17 @@
+/* Ajustar el contenedor del carousel */
+.carousel-container {
+    width: 100%; /* El contenedor ocupa todo el ancho disponible */
+    height: 620px; /* Ajusta la altura según lo que necesites */
+    overflow: hidden; /* Evita que las imágenes sobresalgan del contenedor */
+}
+
+/* Asegurar que las imágenes dentro del carousel se ajusten sin distorsión */
+#carouselExample .carousel-inner img {
+    width: 100%;  /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
+    height: 100%; /* Asegura que la imagen ocupe el 100% de la altura del contenedor */
+    object-fit: fill; /* Ajusta la imagen al contenedor, permitiendo que se deforme */
+}
+/* Ajustar la transición entre las imágenes del carousel */
+#carouselExample .carousel-inner {
+    transition-duration: 3s; /* Ajusta este valor a la duración que prefieras (en segundos) */
+}
