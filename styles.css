@@ -15,6 +15,15 @@
 #carouselExample .carousel-inner {
     transition-duration: 3s; /* Ajusta este valor a la duración que prefieras (en segundos) */
 }
+article {
+  text-align: justify;
+}
+.nav-item {
+  margin-left: 20px;
+  margin-right: 20px;
+  
+}
+
 
         /* Formulario */
         .form-container {
