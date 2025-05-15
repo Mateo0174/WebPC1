@@ -1,0 +1,26 @@
+/* especies.css */
+
+/* Estilo para las tarjetas de especie */
+.especie-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.especie-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para la galería */
+img.img-fluid {
+    border: 2px solid #198754;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+img.img-fluid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal personalizado */
+.modal-content {
+    border: 2px solid #198754;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especies y Galería Multimedia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="especies.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Header -->
+    <header class="bg-success text-white py-3">
+        <div class="container d-flex flex-column align-items-center">
+            <h1>Especies Amazónicas</h1>
+            <nav class="mt-3">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Clasificación de Especies -->
+    <section class="container my-5">
+        <h2 class="mb-4">Clasificación de especies</h2>
+        <div class="row" id="fichas-container">
+            <div class="col-md-4 mb-4">
+                <div class="card especie-card" data-nombre="Jaguar" data-info="Felino carnívoro, habita selvas densas y es símbolo de fuerza.">
+                    <img src="https://inforegion.net.pe/images/2024/09/09/Jaguar-amazonico.webp" class="card-img-top" alt="Jaguar">
+                    <div class="card-body">
+                        <h5 class="card-title">Jaguar</h5>
+                        <p class="card-text">Panthera onca</p>
+                        <button class="btn btn-outline-success btn-ficha">Ver ficha técnica</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card especie-card" data-nombre="Guacamayo rojo" data-info="Ave colorida y ruidosa, fundamental en la dispersión de semillas.">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHQ_PMp6sQb9OVf4_6s-HmSUy_7PIJj28Dr1-I35yC0fn-_jIaltCUBr-V&s=10" class="card-img-top" alt="Guacamayo rojo">
+                    <div class="card-body">
+                        <h5 class="card-title">Guacamayo rojo</h5>
+                        <p class="card-text">Ara macao</p>
+                        <button class="btn btn-outline-success btn-ficha">Ver ficha técnica</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card especie-card" data-nombre="Delfín rosado" data-info="Mamífero acuático endémico de los ríos amazónicos, símbolo de leyendas locales.">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh5omJF2ozyUoGpHbj8tgcJnmdWqlUx86qGAipLtUq1YwOX-OaKmvM2z8e&s=10" class="card-img-top" alt="Delfín rosado">
+                    <div class="card-body">
+                        <h5 class="card-title">Delfín rosado</h5>
+                        <p class="card-text">Inia geoffrensis</p>
+                        <button class="btn btn-outline-success btn-ficha">Ver ficha técnica</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card especie-card" data-nombre="Anaconda verde" data-info="Serpiente de gran tamaño, habita cuerpos de agua y es excelente nadadora.">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Sucuri_verde.jpg" class="card-img-top" alt="Anaconda verde">
+                    <div class="card-body">
+                        <h5 class="card-title">Anaconda verde</h5>
+                        <p class="card-text">Eunectes murinus</p>
+                        <button class="btn btn-outline-success btn-ficha">Ver ficha técnica</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card especie-card" data-nombre="Piraña" data-info="Pez carnívoro con fuerte mandíbula, vive en cardúmenes y es muy temido.">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0o_WFAizw3y-hhzTPVCO4R54_8oj0BulXiUAZawGXMBaMl2CLqGYov4wr&s=10" class="card-img-top" alt="Piraña">
+                    <div class="card-body">
+                        <h5 class="card-title">Piraña</h5>
+                        <p class="card-text">Pygocentrus nattereri</p>
+                        <button class="btn btn-outline-success btn-ficha">Ver ficha técnica</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card especie-card" data-nombre="Mono aullador" data-info="Primate que emite fuertes sonidos, vive en grupos y es territorial.">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMDNlgvlchdeatognk6YBlNz3j2wUAHs2QNSaPcWbfOT-_W7iqGaL0tx0_&s=10" class="card-img-top" alt="Mono aullador">
+                    <div class="card-body">
+                        <h5 class="card-title">Mono aullador</h5>
+                        <p class="card-text">Alouatta spp.</p>
+                        <button class="btn btn-outline-success btn-ficha">Ver ficha técnica</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card especie-card" data-nombre="Tarántula gigante" data-info="Arácnido de gran tamaño, habita en madrigueras y caza por emboscada.">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf_N13o-q4U-UHVqasOOLQopYHbpgTXgC9Fnfbef9ZEKqpzb2Dt6GiD3Y&s=10" class="card-img-top" alt="Tarántula gigante">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarántula gigante</h5>
+                        <p class="card-text">Theraphosa blondi</p>
+                        <button class="btn btn-outline-success btn-ficha">Ver ficha técnica</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card especie-card" data-nombre="Perezoso de tres dedos" data-info="Mamífero de movimientos lentos, habita en árboles y se alimenta de hojas.">
+                    <img src="https://i.pinimg.com/564x/4e/4a/ca/4e4acad5018501cd1871d2c142a9c5a4.jpg" class="card-img-top" alt="Perezoso">
+                    <div class="card-body">
+                        <h5 class="card-title">Perezoso de tres dedos</h5>
+                        <p class="card-text">Bradypus tridactylus</p>
+                        <button class="btn btn-outline-success btn-ficha">Ver ficha técnica</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card especie-card" data-nombre="Rana dardo venenosa" data-info="Pequeño anfibio de vivos colores, su piel contiene toxinas peligrosas.">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa7VVvI6gizuUuNKewcOzYz9HClak7xL3M02OfcNIHvjJQvEeMx6GtimtZ&s=10" class="card-img-top" alt="Rana dardo venenosa">
+                    <div class="card-body">
+                        <h5 class="card-title">Rana dardo venenosa</h5>
+                        <p class="card-text">Dendrobates spp.</p>
+                        <button class="btn btn-outline-success btn-ficha">Ver ficha técnica</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card especie-card" data-nombre="Oso hormiguero gigante" data-info="Mamífero que se alimenta de insectos, tiene un hocico largo y garras poderosas.">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBL_cvLtWKGdiIJkmz0sz2DnP57eHPSYgrFQ&s" class="card-img-top" alt="Oso hormiguero gigante">
+                    <div class="card-body">
+                        <h5 class="card-title">Oso hormiguero gigante</h5>
+                        <p class="card-text">Myrmecophaga tridactyla</p>
+                        <button class="btn btn-outline-success btn-ficha">Ver ficha técnica</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para fichas técnicas -->
+    <div class="modal fade" id="fichaModal" tabindex="-1" role="dialog" aria-labelledby="fichaModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="fichaModalLabel">Ficha Técnica</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-ficha-content">
+                    <!-- Contenido dinámico -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-success text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p>&copy; 2025 Portal Educativo AmazonBio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="especies.js"></script>
+</body>
+</html>
