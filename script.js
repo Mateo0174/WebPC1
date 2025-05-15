@@ -36,7 +36,7 @@
                 $('#estadisticas').show();
                 $('#clasificacion').hide();
             });
-            $('#show-clasifiacion').click(function(){
+            $('#show-clasificacion').click(function(){
                 $('#home').hide();
                 $('#destacados').hide();
                 $('#formulario').hide();
