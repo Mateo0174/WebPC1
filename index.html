@@ -78,6 +78,148 @@
         </div>
     </section>
 
+    <div class="container">
+        <div class="success-message" id="success-message">
+            ¡Gracias por tu contribución! Tu reporte de avistamiento ha sido registrado correctamente.
+        </div>
+        
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Reportar un Avistamiento</h2>
+                <p>Ayúdanos a documentar la biodiversidad amazónica compartiendo tus observaciones</p>
+            </div>
+            
+            <form id="avistamiento-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" required>
+                        <div class="error-message" id="nombre-error">Por favor ingresa tu nombre completo</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                        <div class="error-message" id="email-error">Por favor ingresa un correo electrónico válido</div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tipo-usuario">Tipo de usuario *</label>
+                        <select id="tipo-usuario" name="tipo-usuario" class="form-control" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="investigador">Investigador</option>
+                            <option value="turista">Turista</option>
+                            <option value="local">Habitante local</option>
+                            <option value="estudiante">Estudiante</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <div class="error-message" id="tipo-usuario-error">Por favor selecciona un tipo de usuario</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="fecha">Fecha del avistamiento *</label>
+                        <input type="date" id="fecha" name="fecha" class="form-control" required>
+                        <div class="error-message" id="fecha-error">Por favor selecciona una fecha válida</div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ubicacion">Ubicación GPS *</label>
+                    <input type="text" id="ubicacion" name="ubicacion" class="form-control" placeholder="Ej: -3.7437, -73.2516" required>
+                    <div class="error-message" id="ubicacion-error">Por favor ingresa las coordenadas GPS (formato: latitud, longitud)</div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tipo-organismo">Tipo de organismo avistado *</label>
+                        <select id="tipo-organismo" name="tipo-organismo" class="form-control" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="mamifero">Mamífero</option>
+                            <option value="ave">Ave</option>
+                            <option value="reptil">Reptil</option>
+                            <option value="anfibio">Anfibio</option>
+                            <option value="pez">Pez</option>
+                            <option value="insecto">Insecto</option>
+                            <option value="planta">Planta</option>
+                            <option value="hongo">Hongo</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <div class="error-message" id="tipo-organismo-error">Por favor selecciona el tipo de organismo</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="hora">Hora aproximada</label>
+                        <input type="time" id="hora" name="hora" class="form-control">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="foto">Fotografía del avistamiento</label>
+                    <div class="file-upload">
+                        <button type="button" class="file-upload-btn">Seleccionar archivo</button>
+                        <input type="file" id="foto" name="foto" accept="image/*">
+                    </div>
+                    <div id="preview-container">
+                        <img id="image-preview" src="#" alt="Vista previa">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="descripcion">Descripción del comportamiento observado *</label>
+                    <textarea id="descripcion" name="descripcion" class="form-control" rows="4" required></textarea>
+                    <div class="error-message" id="descripcion-error">Por favor describe lo que observaste</div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Condiciones ambientales (selecciona todas las que apliquen)</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="soleado" name="condiciones" value="soleado">
+                            <label for="soleado">Soleado</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="nublado" name="condiciones" value="nublado">
+                            <label for="nublado">Nublado</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="lluvioso" name="condiciones" value="lluvioso">
+                            <label for="lluvioso">Lluvioso</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="ventoso" name="condiciones" value="ventoso">
+                            <label for="ventoso">Ventoso</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="caluroso" name="condiciones" value="caluroso">
+                            <label for="caluroso">Caluroso</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="frio" name="condiciones" value="frio">
+                            <label for="frio">Frío</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comentarios">Comentarios adicionales</label>
+                    <textarea id="comentarios" name="comentarios" class="form-control" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="autorizacion" name="autorizacion" required>
+                        <label for="autorizacion">Autorizo el uso de esta información para fines científicos y educativos *</label>
+                    </div>
+                    <div class="error-message" id="autorizacion-error">Debes autorizar el uso de la información</div>
+                </div>
+                
+                <button type="submit" class="btn-submit">Enviar Reporte</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="bg-dark text-white py-3 mt-auto">
         <div class="container text-center">
