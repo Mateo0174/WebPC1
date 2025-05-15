@@ -167,5 +167,31 @@
             text-align: center;
             display: none;
         }
-
+            .section-title::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background-color: #28a745;
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
         /*FIN DE FORMULARIO*/
+
+
+
+ /*parte robert , estadisticas/
+ 
+/* Wrapper del gráfico: fija altura y posición para que Chart.js lo llene */
+.chart-wrapper {
+  position: relative;
+  height: 300px; /* ajústalo si quieres otro alto */
+}
+
+/* Iconos de cada categoría: tamaño uniforme */
+.icon {
+  width: 80px;
+  height: auto;
+}

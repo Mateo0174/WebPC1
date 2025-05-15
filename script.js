@@ -2,17 +2,34 @@
             // Mostrar la sección "Inicio" al cargar
             $('#home').show();
             $('#destacados').hide();
-
+            $('#formulario').hide();
+            $('#estadisticas').hide();
             // Al hacer clic en "Inicio"
             $('#show-home').click(function(){
                 $('#home').show();
                 $('#destacados').hide();
+                $('#formulario').hide();
+                $('#estadisticas').hide();
             });
 
             // Al hacer clic en "Lo más destacado"
             $('#show-destacados').click(function(){
                 $('#home').hide();
                 $('#destacados').show();
+                $('#formulario').hide();
+                $('#estadisticas').hide();
+            });
+            $('#show-formulario').click(function(){
+                $('#home').hide();
+                $('#destacados').hide();
+                $('#formulario').show();
+                $('#estadisticas').hide();
+            });
+            $('#show-estadisticas').click(function(){
+                $('#home').hide();
+                $('#destacados').hide();
+                $('#formulario').hide();
+                $('#estadisticas').show();
             });
         });
 
